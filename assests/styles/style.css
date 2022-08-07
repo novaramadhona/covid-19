@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 50px;
+  background-color: #fd4747;
+  text-align: center;
+  color: white;
+}
+
+.dot {
+  display: none;
+}
+
+nav {
+  background-color: #ea4335;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 74%;
+}
+
+h2,
+h3 {
+  color: #635c79;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container {
+  display: flex;
+  height: 120px;
+  background-color: white;
+  padding: 7px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: #514f79;
+  margin: 5px;
+  border-radius: 7px;
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.container p {
+  font-weight: bold;
+}
+
+aside {
+  float: right;
+  width: 26%;
+  padding-left: 20px;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 7px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  aside table {
+    margin: 0 auto;
+  }
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #fd4747;
+  text-align: center;
+  font-weight: bold;
+}
